@@ -1,0 +1,28 @@
+.form{
+   padding: 10px; 
+}
+.input-block{
+    height: 50px;
+    padding: 30px;
+    margin-left: 0px;
+    
+}
+.input{
+    width: 450px;
+    height: 30px;
+}
+.btn{
+  
+    height: auto;
+    width: auto;
+    
+
+}
+.bg{
+    background-color:aliceblue;
+    height: 300px;
+    width: 600px;
+}
+.pass{
+    margin-left: 0px;
+}

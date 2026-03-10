@@ -1,0 +1,137 @@
+<div class="row justify-content-center my-auto">
+  <div class="col-md-6 col-10">
+    <h3 class="mb-5 text-center heading "><b>Create Employee</b></h3>
+   
+
+    <form #signupForm="ngForm" (ngSubmit)="registernow()">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-control-label text-muted">Username</label>
+                    <input
+                      type="text"
+                      id="username"
+                      name="username"
+                      placeholder="Username"
+                      class="form-control"
+                      [(ngModel)]="username"
+                      required
+                    />
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-control-label text-muted">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      class="form-control"
+                      [(ngModel)]="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      required
+                    />
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-control-label text-muted">MobileNumber</label>
+                    <input
+                      type="text"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="Mobile"
+                      class="form-control"
+                      [(ngModel)]="mobile"
+                      pattern="[0-9]{10}"
+                      required
+                    />
+                   
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-control-label text-muted">Password</label>
+                    <input
+                      type="password"
+                      id="psw"
+                      name="psw"
+                      placeholder="Password"
+                      class="form-control"
+                      [(ngModel)]="password"
+                      required
+                    />
+                  </div>
+            </div>
+        </div>
+      
+
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-control-label text-muted">Gender</label>
+                    
+                    <select name="gen" id="gender" [(ngModel)]="gender" class="form-select" >
+                        <option disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="no">Prefer Not to Say</option>
+                    </select>
+                    
+                    </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label class="form-control-label text-muted">Branches</label>
+                    <select 
+                      [(ngModel)]="selectedBranchId" 
+                      name="selectedBranchId" 
+                      id="selectedBranchId" 
+                      class="form-select" 
+                      required>
+                      <option value="" disabled selected>Select a branch</option>
+                      <option *ngFor="let branch of branches" [value]="branch._id">{{ branch.branchName }}</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-md-6">
+              
+      <div class="form-group">
+          <label class="form-control-label text-muted"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="cpsw"
+            name="cpsw"
+            placeholder="Confirm Password"
+            class="form-control"
+            [(ngModel)]="confirmPassword"
+            required
+          />
+        </div>
+        
+            </div>
+            <div class="col-md-6 mt">
+              <div class="">
+                  <button
+                    type="submit"
+                    class="btn-block btn-color"
+                    [disabled]="signupForm.invalid"
+                  >
+                   Save Employee
+                  </button>
+                </div>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
+

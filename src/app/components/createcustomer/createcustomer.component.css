@@ -1,0 +1,27 @@
+.col-md-6{
+    position: relative;
+    left:120px;
+}
+
+.form-select{
+    width: 280px;
+    border:1px solid lightgrey;
+    padding:5px;
+    border-radius:5px;
+}
+
+.mt{
+    margin-top: 0px;
+    padding: 25px;
+    }
+    .mt>div>button{
+        background-color: green;
+        color:white;
+        border:none;
+        padding:5px
+    }
+    h3{
+        margin-left: 180px;
+        margin-top: 30px;
+    
+    }

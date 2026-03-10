@@ -1,0 +1,21 @@
+
+form {
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+h1 {
+    padding: 20px;
+}
+
+form{
+    width: 500px;
+    padding:70px;
+    margin-top:60px;
+    
+}
+.img-fluid{
+    margin-top: 50px;
+    margin-left: 60px;
+}

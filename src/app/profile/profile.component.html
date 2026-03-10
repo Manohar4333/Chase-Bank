@@ -1,0 +1,31 @@
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6 pro">
+
+<div class="card-container">
+
+	<img class="round" src="https://img.freepik.com/free-photo/front-view-modern-boy-with-sunglasses-posing_23-2148423101.jpg?t=st=1733397058~exp=1733400658~hmac=d79bf154e15352e64239245b6f813d6094a99a8122eb8e31f942a4478f86d8fc&w=740" alt="user" height="200px" width="200px" />
+	<h3>{{user.name | uppercase}}</h3>
+	
+    <table class="table">
+        <tr class="row">
+            <td>Email</td>
+            <td> {{user.email}}</td>
+        </tr>
+        <tr  class="row">
+            <td>Mobile</td>
+            <td>{{user.mobile}}</td>
+        </tr>
+        <tr class="row">
+            <td>Balance</td>
+            <td>{{user.availableBalance}}</td>
+        </tr>
+    </table>
+
+	<div class="skills">
+		<h6>Account Id</h6>
+        <p>{{user._id}}</p>
+	</div>
+</div>
+
+</div>
+</div>

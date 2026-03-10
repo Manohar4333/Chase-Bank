@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Welcome to Chase Bank</h1>
+      <h2 class="text-center text-secondary">"Your Future, Your Finances—Simplified Banking at Your Fingertips."</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <img src="https://webstockreview.net/images/clipboard-clipart-enrolment-15.png" class="img-fluid" alt="" height="400" width="400">
+    </div>
+    <div class="col-12 col-md-6 lgn">
+      <br><br>
+      <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+        <h2>Login</h2>
+        
+        <div class="form-group">
+          <label for="email" class="form-label">Username</label>
+          <input type="email" name="email" id="email" placeholder="Enter Username" class="form-control" [(ngModel)]="useremail" required>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" id="password" placeholder="Password" class="form-control" [(ngModel)]="password" required>
+          <br>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-lg" [disabled]="!loginForm.valid">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>   
+</body>
+</html>

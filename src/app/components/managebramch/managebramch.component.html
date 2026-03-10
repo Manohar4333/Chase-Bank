@@ -1,0 +1,22 @@
+<table class="table table-bordered table-hovered">
+    <tr>
+        <th>Branch Name</th>
+        <th>Branch IFSC Code</th>
+        <th>Branch Address</th>
+        <th>Branch Phone</th>
+        <th>Branch Manager</th>
+        <th>Manage</th>
+    </tr>
+    <tr *ngFor="let b of branches">
+        <td>{{b.branchName}}</td>
+        <td>{{b.ifscCode}}</td>
+        <td>{{b.address}}</td>
+        <td>{{b.contactDetails}}</td>
+        <td>{{b.branchManager}}</td>
+        <td>
+            <button class="btn btn-warning">Edit</button>
+            <button class="btn btn-danger ms-3">Delete</button>
+        </td>
+    </tr>
+
+</table>
