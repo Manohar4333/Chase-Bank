@@ -1,9 +1,9 @@
-.pro{
-    margin-left: 100px;
-}
-
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.pro{
+	margin-left: 100px;
+}
 
 * {
 	box-sizing: border-box;
